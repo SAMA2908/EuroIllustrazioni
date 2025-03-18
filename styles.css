@@ -1,0 +1,276 @@
+/* Font e layout generale */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F7F7; /* Colore di sfondo chiaro */
+    color: #333; /* Colore di testo */
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; /* Fissa l'header alla parte superiore della pagina */
+    z-index: 1000; /* Assicura che l'header sia sopra altri elementi */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Oro */
+    cursor: pointer; /* Cursore a mano per il logo cliccabile */
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #FFD700; /* Oro */
+}
+
+/* Sezione Hero */
+.hero {
+    background-color: #F1F1F1; /* Argento chiaro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #003366; /* Blu scuro */
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Sezione Gallery */
+.gallery-section {
+    padding: 50px 0;
+}
+
+.card {
+    border: none; /* Nessun bordo */
+    background-color: #fff; /* Bianco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effetto di ingrandimento */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Ingrandimento della card al passaggio del mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombra più forte */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25em;
+    color: #003366; /* Blu scuro */
+}
+
+.card .btn {
+    background-color: #FFD700; /* Oro */
+    color: #003366; /* Blu scuro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.card .btn:hover {
+    background-color: #FFCC00; /* Oro più chiaro */
+    color: #fff;
+}
+
+/* Paginazione */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-link {
+    color: #003366;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #003366;
+}
+
+.page-link:hover {
+    color: #FFD700; /* Oro */
+    background-color: #003366; /* Blu scuro */
+}
+
+.page-item.active .page-link {
+    background-color: #FFD700; /* Oro */
+    border-color: #FFD700; /* Oro */
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+    color: #003366;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Modifiche al bottone del menù */
+.nav .dropdown-toggle {
+    background-color: #fff; /* Bottone bianco */
+    color: #003366; /* Testo blu scuro */
+    border: 1px solid #003366; /* Bordo blu scuro */
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.nav .dropdown-toggle:hover {
+    background-color: #003366; /* Bottone blu scuro al passaggio del mouse */
+    color: #fff; /* Testo bianco al passaggio del mouse */
+    border: 1px solid #003366; /* Mantieni il bordo blu scuro */
+}
+
+.nav .dropdown-menu {
+    border: 1px solid #003366; /* Bordo blu scuro per il menù a discesa */
+    overflow: hidden;
+}
+
+.nav .dropdown-item {
+    color: #003366; /* Colore del testo blu scuro */
+}
+
+.nav .dropdown-item:hover {
+    color: #FFD700; /* Colore oro al passaggio del mouse */
+}
+
+/* SEZIONE ABOUT */
+.about-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2, 
+.about-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: #003366;
+    margin-top: 20px;
+}
+
+/* Liste personalizzate per About */
+.about-section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.about-section ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+    font-size: 1.2em;
+}
+
+/* Breadcrumb migliorato */
+.breadcrumb {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.breadcrumb-item a {
+    color: #003366;
+    font-weight: 600;
+}
+
+.breadcrumb-item.active {
+    color: #FFD700;
+}
+
+/* Ridurre le dimensioni dell'immagine della moneta */
+.img-fluid {
+    max-width: 60%; /* Imposta la larghezza massima al 60% */
+    height: auto;
+}
+
+/* Ridurre le dimensioni del carosello */
+.carousel-inner img {
+    max-width: 80%; /* Imposta la larghezza massima al 80% */
+    margin: 0 auto; /* Centrato nella pagina */
+}
+
+.carousel {
+    max-width: 80%; /* Imposta la larghezza massima del carosello */
+    margin: 0 auto; /* Centrato */
+}
+
+/* Stili per il logo */
+.logo {
+    font-size: 24px;
+    cursor: pointer; /* Per far capire che è interattivo */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.MappaConcettuale {
+    width: 95%;        /* Imposta la larghezza al 95% della larghezza della pagina */
+    height: auto;      /* Mantiene le proporzioni originali dell'immagine */
+    display: block;    /* Assicura che l'immagine venga trattata come un blocco */
+    margin: 0 auto;    /* Centra l'immagine orizzontalmente */
+  }
+
+  .wireframe-home,
+.wireframe-collection,
+.wireframe-about,
+.wireframe-coin {
+    width: 95%;        /* Imposta la larghezza al 95% della larghezza della pagina */
+    height: auto;      /* Mantiene le proporzioni originali dell'immagine */
+    display: block;    /* Assicura che l'immagine venga trattata come un blocco */
+    margin: 0 auto;    /* Centra l'immagine orizzontalmente */
+    border-radius: 8px; /* Aggiunge bordi arrotondati per un aspetto più curato */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera per risalto */
+}
+
+

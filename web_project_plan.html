@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroIllustrazioni - Web Project Plan</title>
+
+    <!-- SEO & Dublin Core Metadata -->
+    <meta name="keywords" content="Euro, Monete, Numismatica, Illustrazioni Euro, Storia Monete, Cultura Europea">
+    <meta name="description" content="Progettazione e documentazione del sito EuroIllustrazioni, dedicato alle illustrazioni sulle monete in euro.">
+    <!-- Dublin Core Metadata -->
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+<meta name="DC.Title" content="EuroIllustrazioni - Web Project Plan"/>
+<meta name="DC.Creator" content="Team EuroIllustrazioni"/>
+<meta name="DC.Subject" content="Progetto Web, Pianificazione Sito, Sviluppo Web, UX/UI Design"/>
+<meta name="DC.Description" content="Dettagli sul piano di sviluppo del sito EuroIllustrazioni: obiettivi, strategie di design, funzionalità e roadmap di lancio."/>
+<meta name="DC.Publisher" content="EuroIllustrazioni"/>
+<meta name="DC.Contributor" content="Redazione EuroIllustrazioni"/>
+<meta name="DC.Date" content="2025-03-12"/>
+<meta name="DC.Type" content="Documento di Pianificazione Web"/>
+<meta name="DC.Format" content="text/html"/>
+<meta name="DC.Identifier" content="https://www.euroillustrazioni.com/web_project_plan"/>
+<meta name="DC.Source" content="https://www.euroillustrazioni.com"/>
+<meta name="DC.Language" content="it"/>
+<meta name="DC.Relation" content="https://www.euroillustrazioni.com/collezione"/>
+<meta name="DC.Rights" content="© 2025 EuroIllustrazioni - Tutti i diritti riservati"/>
+
+
+    <!-- Bootstrap & CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=67d1483186189a0019fafc31&product=inline-share-buttons&source=platform" async="async"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="home.html" class="logo" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Torna alla home">💰 EuroIllustrazioni</a>
+            <nav class="nav">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="home.html">Home</a></li>
+                        <li><a class="dropdown-item" href="collezione.html">Collezione</a></li>
+                        <li><a class="dropdown-item" href="about.html">About</a></li>
+                        <li><a class="dropdown-item" href="web_project_plan.html">Web Project Plan</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+     <!-- BREADCRUMBS -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Web project plan</li>
+        </ol>
+    </nav>
+
+    <!-- SEZIONE INTRODUTTIVA -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="hero-title">Pianificazione del sito EuroIllustrazioni</h1>
+            <p class="hero-subtitle">Struttura, contenuti e navigazione per raccontare la storia delle monete in euro</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ol>
+                <li><a href="#idea">Idea</a></li>
+                <li><a href="#brief">Brief</a></li>
+                <li><a href="#benchmark">Benchmark</a></li>
+                <li><a href="#struttura">Struttura</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#usabilita">Usabilità</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#bibliografia">Bibliografia</a></li>
+            </ol>
+        </nav>
+
+        <main class="content">
+            <section id="idea">
+                <h2>1. Idea (Abstract)</h2>
+                <p><strong>EuroIllustrazioni</strong> è un sito dedicato alla scoperta delle illustrazioni sulle monete in euro, con l’obiettivo di fornire informazioni dettagliate sulla storia e il significato culturale di ogni moneta.</p>
+                <p>Il progetto coprirà tutti questi aspetti:</p>
+                <ul>
+                    <li><strong>Contenuto:</strong> Raccolta di immagini e descrizioni delle monete.</li>
+                    <li><strong>Caratteristiche:</strong> Struttura interattiva con schede informative.</li>
+                    <li><strong>Funzionalità:</strong> Navigazione semplice e ricerca avanzata.</li>
+                    <li><strong>Strumenti:</strong> Database di monete, Gallerie, Schede informative per ogni moneta</li>
+                    <li><strong>Accesso:</strong> Ottimizzato per desktop e mobile.</li>
+                </ul>
+                <p>Prima della realizzazione, si verificherà che non esista già un sito simile con le stesse caratteristiche.</p>
+            </section>
+
+            <section id="brief">
+                <h2>2. Brief</h2>
+                <p>Il brief rappresenta il primo confronto con il progetto per la pianificazione del lavoro. È necessario affrontare i seguenti aspetti fondamentali:</p>
+                <ul>
+                    <li><strong>    2.1 Finalità e obiettivi del progetto:</strong> 
+                        <p>Il progetto <strong>EuroIllustrazioni</strong> ha l’obiettivo di fornire una risorsa informativa e interattiva che valorizzi il significato culturale delle monete in euro. Attraverso contenuti dettagliati e multimediali, gli utenti potranno esplorare la storia e i simboli delle monete in modo accessibile e coinvolgente.</p>
+                    </li>
+                    <li><strong>    2.2 Pubblico di riferimento:</strong> 
+                        <p>Il sito è destinato a:</p>
+                        <ul>
+                            <li>Appassionati di numismatica</li>
+                            <li>Storici e ricercatori</li>
+                            <li>Collezionisti di monete</li>
+                            <li>Curiosi della cultura europea</li>
+                        </ul>
+                    </li>
+                    <li><strong>    2.3 Accesso alla risorsa:</strong> 
+                        <p>Il sito sarà ottimizzato per diversi dispositivi:</p>
+                        <ul>
+                            <li>Computer desktop</li>
+                            <li>Tablet</li>
+                            <li>Smartphone</li>
+                        </ul>
+                        <p>Il design multipiattaforma garantirà un’esperienza utente fluida e accessibile a tutti.</p>
+                    </li>
+                    <li><strong>    2.4 Modalità di raccolta dei contenuti e dei dati:</strong> 
+                        <p>I contenuti verranno raccolti da fonti attendibili e liberamente riutilizzabili, rispettando le licenze di utilizzo. Le principali fonti includono:</p>
+                        <ul>
+                            <li><a href="https://cultura.gov.it/luogo/castel-del-monte" target="_blank">Castel del Monte - Ministero della Cultura</a> per informazioni ufficiali e dettagli storici</li>
+                            <li><a href="https://www.stupormundi.it/it/castel-del-monte" target="_blank">Stupor Mundi</a> per approfondimenti culturali e storici</li>
+                            <li>Internet generale per la raccolta di immagini</li>
+                            <li><a href="https://www.google.com/maps" target="_blank">Google Maps</a> per localizzazioni geografiche</li>
+                            <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a> per informazioni e dettagli storici</li>
+                        </ul>
+                        
+                        <p>I materiali saranno adattati per garantire una lettura chiara e intuitiva, con un’interfaccia user-friendly.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="benchmark">
+                <h2>3. Benchmark</h2>
+                <p>Il benchmark consiste nell'analisi di mercato dei principali competitor, valutando contenuti, design, tecnologie e strumenti utilizzati. Questo processo aiuta a comprendere il panorama esistente e a individuare le opportunità di innovazione.</p>
+            
+                <h3>3.1 Aree di analisi</h3>
+                <ul>
+                    <li><strong>✓ Idea:</strong> Quali siti trattano già le illustrazioni delle monete in euro?</li>
+                    <li><strong>✓ Contenuti esistenti:</strong> Analisi di testi, immagini, audio e video già disponibili su altre piattaforme.</li>
+                    <li><strong>✓ Design:</strong> Studio dell'architettura delle pagine, scelta dei colori, dei font e dei template utilizzati dai competitor.</li>
+                    <li><strong>✓ Tecnologie:</strong> Valutazione degli strumenti, delle infrastrutture e dei linguaggi di programmazione adottati dai siti concorrenti.</li>
+                </ul>
+            
+                <h3>3.2 Analisi dei competitor</h3>
+                <p>Attualmente, diverse piattaforme trattano la numismatica e le monete in euro, tra cui:</p>
+                <ul>
+                    <li><a href="https://it.wikipedia.org/wiki/Euro" target="_blank">Wikipedia</a> – Offre informazioni di base sulle monete in euro, ma senza un focus specifico sulle illustrazioni.</li>
+                    <li><a href="https://collezionieuro.altervista.org/" target="_blank">Collezioni Euro</a> – Sito dedicato ai collezionisti, con dettagli sulle monete rare e sulle varianti, ma privo di un'esperienza interattiva.</li>
+                    <li><a href="https://www.ecb.europa.eu/euro/coins/html/index.it.html" target="_blank">Banca Centrale Europea</a> – Fonte ufficiale sulle monete in euro, ma con contenuti limitati alle caratteristiche tecniche.</li>
+                </ul>
+            
+                <h3>3.3 Perché EuroIllustrazioni è unico?</h3>
+                <p>Rispetto ai competitor, <strong>EuroIllustrazioni</strong> si distingue per:</p>
+                <ul>
+                    <li>Un’<strong>esperienza interattiva</strong> che permette agli utenti di esplorare ogni moneta con immagini in alta risoluzione e descrizioni dettagliate.</li>
+                    <li>Un focus specifico sulla <strong>storia e sul significato simbolico</strong> delle illustrazioni, non solo sugli aspetti tecnici.</li>
+                    <li>Una struttura intuitiva con <strong>filtri di ricerca avanzati</strong> per trovare facilmente le monete per anno, paese o valore.</li>
+                    <li>Integrazione con <strong>mappe e immagini storiche</strong> per contestualizzare le monete nel panorama culturale europeo.</li>
+                </ul>
+            
+                <h3>3.4 Riutilizzo di strumenti e tecnologie</h3>
+                <p>Nella fase di benchmark, vengono anche individuati strumenti e piattaforme utili per migliorare l’esperienza utente. Alcuni esempi:</p>
+                <ul>
+                    <li><strong>Design:</strong> Bootstrap per un’interfaccia responsive e moderna.</li>
+                    <li><strong>Database:</strong> Wikidata per l’organizzazione strutturata delle informazioni.</li>
+                    <li><strong>Interattività:</strong> Google Maps per localizzare le monete sulle mappe.</li>
+                </ul>
+            
+                <p>Questa analisi permette di costruire un sito innovativo, che valorizza gli aspetti culturali delle monete in euro offrendo agli utenti un’esperienza coinvolgente e interattiva.</p>
+            </section>
+            
+            <section id="struttura">
+                <h2>4. Struttura</h2>
+                <p>La struttura del sito EuroIllustrazioni sarà pensata per garantire una navigazione semplice e fluida, permettendo agli utenti di accedere facilmente ai contenuti e di esplorare le informazioni in modo intuitivo.</p>
+                
+                <h3>4.1 Mappa concettuale</h3>
+                <img src="src/MappaConcettuale.jpg" class="MappaConcettuale" alt="Mappa concettuale di EuroIllustrazioni">
+                <p>La mappa concettuale offre una rappresentazione visiva delle principali sezioni e dei collegamenti tra i diversi contenuti del sito, facilitando la comprensione della struttura e delle relazioni tra le informazioni.</p>
+                
+                <h3>4.2 Schema delle dipendenze</h3>
+                <img src="src/SchemaDipendenze.jpg" alt="Schema delle dipendenze di EuroIllustrazioni">
+                <p>Lo schema delle dipendenze illustra come le diverse parti del sito siano collegate tra loro, evidenziando le relazioni gerarchiche e funzionali per garantire una navigazione coerente e logica.</p>
+                
+                <h3>4.3 Categorie descrittive</h3>
+                <ul>
+                    <li><strong>Nome della Moneta:</strong> Indica il nome ufficiale della moneta. (es: 1 Centesimo di Euro - Castel del Monte)</li>
+                    <li><strong>Creatore:</strong> Nome dell’ente o della zecca che ha prodotto la moneta. (es: Zecca dello Stato Italiano)</li>
+                    <li><strong>Anno di Emissione:</strong> L’anno in cui la moneta è stata coniata ed emessa ufficialmente. (es: 2002)</li>
+                    <li><strong>Soggetto Raffigurato:</strong> Descrizione del soggetto o dell’immagine raffigurata sulla moneta. (es: Il Castel del Monte, simbolo dell'architettura medievale sotto Federico II, Patrimonio dell'Umanità UNESCO)</li>
+                    <li><strong>Titolo dell'Illustrazione:</strong> Nome o titolo assegnato all'illustrazione o al disegno presente sulla moneta. (es: "Castel del Monte")</li>
+                    <li><strong>Descrizione Dettagliata:</strong> Una spiegazione approfondita del soggetto raffigurato, del contesto storico e del significato della moneta. (es: La moneta da 1 centesimo di euro raffigura il Castel del Monte, un castello medievale unico per la sua forma ottagonale e legato a Federico II di Svevia. Questo monumento, riconosciuto come Patrimonio dell'Umanità dall'UNESCO, simboleggia l'ingegno architettonico e la potenza del Sacro Romano Impero nel XIII secolo.)</li>
+                    <li><strong>Immagine della Moneta:</strong> Inserire una foto chiara della moneta, preferibilmente del retro in quanto li vi è l'illustrazione.</li>
+                    <li><strong>Carosello di Immagini:</strong> Serie di immagini che mostrano dettagli e particolari dei luoghi/soggetti raffigurati. (es: Immagini del Castel del Monte, il sito che la moneta rappresenta, mostrando la sua architettura unica e le torri ottagonali)</li>
+                    <li><strong>Mappa della Posizione:</strong> Indicazione geografica o riferimento al luogo collegato alla moneta (se applicabile). (es: Castel del Monte, situato a 18 km da Andria, in Puglia, Italia)</li>
+                  </ul>                  
+            </section>
+            
+
+            <section id="layout">
+                <h2>5. Layout</h2>
+            
+                <h3>5.1 Wireframe Home</h3>
+                <img src="src/WireFrameHomePage.png" class="wireframe-home" alt="Wireframe della pagina Home">
+                <p>Il wireframe della pagina Home presenta una struttura pulita e ben organizzata. In alto si trova una barra di navigazione con il logo e un menu a discesa per accedere rapidamente alle sezioni principali del sito. Il titolo principale "Euroillustrazioni" è accompagnato da un sottotitolo che introduce il tema del sito. Al centro della pagina è presente una griglia di quattro immagini di monete, ciascuna con un nome e un pulsante "Scopri di più" per ottenere ulteriori dettagli. Sotto la griglia è presente un sistema di paginazione che consente di sfogliare altre monete. La pagina si conclude con un footer che contiene le informazioni di contatto e le icone social.</p>
+            
+                <h3>5.2 Wireframe Collezione</h3>
+                <img src="src/WireFrameCollezione.png" class="wireframe-collection" alt="Wireframe della pagina Collezione">
+                <p>Il wireframe della pagina Collezione è progettato per offrire una panoramica sulle monete europee, suddivise tra quelle in circolazione e commemorative. In alto è presente una barra di navigazione con il logo del sito, un menu a discesa e un breadcrumb ("Home > Collezione") che aiuta l’utente a orientarsi all’interno del sito. Subito sotto, un campo di ricerca permette di trovare rapidamente una moneta specifica, mentre un sistema di filtri consente di selezionare le monete in base a criteri come valore, materiale e grandezza. Il titolo principale introduce la sezione, seguito da un breve testo descrittivo che spiega il valore culturale e storico delle monete. La pagina è strutturata in due sezioni principali. La prima è dedicata alle monete attualmente in circolazione, mostrate attraverso immagini segnaposto accompagnate dal nome della moneta e da un pulsante "Scopri di più" per accedere ai dettagli. La seconda sezione è riservata alle monete commemorative, presentate con lo stesso layout della sezione precedente. Nella parte inferiore della pagina, il footer include le informazioni di contatto, un indirizzo email e un numero di telefono, oltre a icone social per la condivisione sui principali canali digitali.</p>
+            
+                <h3>5.3 Wireframe About</h3>
+                <img src="src/WireFrameAbout.png" class="wireframe-about" alt="Wireframe della pagina About">
+                <p>Il wireframe della pagina About mostra una struttura chiara e ordinata. Nella parte superiore è presente una barra di navigazione con il logo e un menu a discesa. Subito sotto c'è un breadcrumb ("Home > About") che aiuta a orientarsi nel sito. Il titolo principale "Le Monete d'Europa" è seguito da un sottotitolo che invita a scoprire di più sul progetto. La pagina è organizzata in diverse sezioni, ognuna con un titolo come "Descrizione del Sito", "La Nostra Missione" e "Cosa Offriamo", accompagnate da blocchi di testo segnaposto. Alla fine della pagina c'è un footer che include informazioni di contatto e icone per la condivisione sui social media.</p>
+            
+                <h3>5.4 Wireframe Moneta</h3>
+                <img src="src/WireFrameMoneta.png" class="wireframe-coin" alt="Wireframe della pagina Moneta">
+                <p>Il wireframe della pagina Dettaglio Moneta è strutturato per offrire una panoramica dettagliata su una moneta specifica. In alto è presente una barra di navigazione con il logo e un menu a discesa, seguita da un breadcrumb ("Home > Collezione > 1 cent") che indica la posizione nel sito. Il titolo principale introduce la moneta, seguito da una sezione dedicata ai metadati che fornisce dettagli strutturati secondo lo standard Dublin Core. Al centro della pagina è visibile un'immagine grande della moneta. Subito sotto, è presente il nome dell'illustrazione con una descrizione dettagliata. Dopo la descrizione è inserito un carosello di immagini che permette di visualizzare ulteriori dettagli o varianti della moneta. Nella parte inferiore è presente una mappa che mostra la posizione geografica associata all'illustrazione. Il footer include informazioni di contatto e icone social per la condivisione.</p>
+            </section>
+            
+            <section id="usabilita">
+                <h2>6. Usabilità</h2>
+                <p>Il sito EuroIllustrazioni è progettato per garantire un'esperienza utente fluida, intuitiva e completamente accessibile, seguendo le migliori pratiche di usabilità. Ogni pagina è pensata per essere facilmente navigabile e per fornire agli utenti gli strumenti necessari per esplorare i contenuti senza difficoltà.</p>
+            
+                <h3>6.1 Norme di Usabilità per l'Architettura</h3>
+                <p>La navigazione principale è gestita tramite una navbar che rimane sempre visibile nella parte superiore della finestra grazie alla funzione sticky. Questo permette agli utenti di avere il menu sempre a portata di mano, anche durante lo scorrimento della pagina. La pagina attiva è evidenziata nella navbar, consentendo agli utenti di capire immediatamente dove si trovano. Cliccando sul logo o sull'immagine della testata, è possibile tornare facilmente alla homepage.</p>
+                <p>In tutte le pagine, ad eccezione della homepage, sono presenti le breadcrumbs: questi strumenti di navigazione aiutano l'utente a orientarsi facilmente nel sito e a tornare rapidamente alla homepage o alle sezioni precedenti. Alla fine di ogni pagina è presente un footer che replica il contenuto e l'aspetto della navbar, offrendo continuità nella navigazione.</p>
+            
+                <p>Le pagine sono organizzate in sezioni tematiche ben definite, con particolare attenzione alla struttura del catalogo. Il catalogo è diviso in due macro-sezioni: una per i filtri di browsing e una per la visualizzazione delle monete. Le pagine di raccolta seguono uno schema coerente, creando un ambiente familiare e riconoscibile per gli utenti.</p>
+            
+                <p>Le pagine dedicate alle monete sono progettate per offrire un'esperienza chiara e facile da usare. Al centro c'è una grande immagine della moneta, che si adatta a qualsiasi dispositivo, accompagnata da una descrizione che racconta la sua storia e il suo significato. Le informazioni principali, come il titolo, il creatore e la data di emissione, sono evidenziate per renderle facili da leggere, e ci sono dei link che permettono di navigare facilmente tra le sezioni. Una barra di navigazione fissa e una serie di indicazioni aiutano a orientarsi e tornare alle pagine precedenti. Il sito è progettato per essere visualizzato al meglio su tutti i dispositivi, e una galleria di immagini permette di navigare facilmente tra le foto della moneta.
+
+                    Inoltre, c'è una mappa che mostra la posizione dell'oggetto o del monumento rappresentato nell'immagine, se disponibile, per permettere agli utenti di vedere dove si trova nel mondo reale.</p>
+            
+                <p>Il sito è completamente responsivo grazie all'uso di Bootstrap, che garantisce una visualizzazione ottimale su tutti i dispositivi. Le pagine sono strutturate utilizzando il sistema grid di Bootstrap, assicurando una visualizzazione chiara e ordinata anche su dispositivi mobili. La navbar principale e i canali di navigazione secondaria, accessibili tramite i dropdown della navbar, sono progettati per essere facilmente utilizzabili su qualsiasi dispositivo. Inoltre, sono presenti numerosi link e bottoni che rimandano a diverse sezioni del sito, facilitando l'esplorazione dei contenuti.</p>
+            
+                <h3>6.2 Norme di Usabilità per l'Aspetto e la Tipografia</h3>
+                <p>6.2 Norme di Usabilità per l'Aspetto e la Tipografia
+                    L'aspetto tipografico del sito è stato progettato per favorire una lettura chiara e una navigazione fluida. È stato scelto il font "Poppins" per il corpo del testo, noto per la sua leggibilità, mentre per i titoli viene utilizzato "Playfair Display", un font elegante che conferisce un tocco distintivo. Il testo principale è di un grigio scuro su uno sfondo chiaro, per garantire un buon contrasto e una lettura confortevole. Gli elementi da enfatizzare, come i link, sono evidenziati con un colore che richiama l'oro, un richiamo ai colori delle monete, mentre i link interni sono evidenziati in blu scuro, richiamando i colori della bandiera dell'Unione Europea. Inoltre, le cards presentano un effetto interattivo che ne aumenta la visibilità quando l'utente ci passa sopra con il cursore.</p>
+            
+                <h3>6.3 Norme di Usabilità per Colori, Font e Icone</h3>
+                <p>I colori utilizzati nel sito sono stati scelti per richiamare quelli delle monete e della bandiera dell'Unione Europea, con il blu scuro e l'oro come tonalità principali. Questi colori non solo creano un contrasto visivo piacevole, ma evocano anche un senso di affidabilità e valore. Il grigio scuro viene utilizzato per il testo, mentre l'oro appare nei dettagli per attrarre l'attenzione e aggiungere un tocco di eleganza. Le icone, facilmente riconoscibili e cliccabili, sono state scelte per facilitare la navigazione e migliorare l'interazione con l'utente, rendendo l'esperienza di esplorazione del sito più intuitiva.</p>
+            </section>
+            
+
+            <section id="servizi">
+                <h2>7. Servizi</h2>
+                
+                <h3>7.1 Sistemi di Browsing per Valorizzare</h3>
+                <p>La collezione include diversi sistemi di browsing che permettono di filtrare le monete in base a categorie specifiche, come ad esempio il valore, il materiale o la grandezza. Attualmente, è possibile filtrare le monete per valore (ad esempio, 1 cent, 2 cent, 1 euro, ecc.), per materiale (come Rame, Ottone, Nichel, Argento, Oro) e per grandezza (Piccola, Media, Grande). Questi filtri sono accessibili tramite un’interfaccia semplice ed intuitiva che permette agli utenti di affinare la loro ricerca e trovare facilmente la moneta desiderata.
+                    
+                    In futuro, potrebbero essere introdotti nuovi filtri per arricchire ulteriormente l’esperienza di navigazione, come un filtro per formato o per edizioni speciali. Inoltre, sarebbe interessante aggiungere un filtro basato sui luoghi, attualmente disponibile solo attraverso una mappa interattiva, che consenta agli utenti di esplorare la collezione in modo ancora più dettagliato.
+                    
+                    Tutti questi strumenti di ricerca avanzata sono pensati per rendere la navigazione nella collezione più fluida ed efficace, garantendo agli utenti un'esperienza di ricerca completa e personalizzabile.</p>
+            
+                <h3>7.2 Utilities e Tool per l'Interazione</h3>
+                <p>Il sito della collezione di monete offre una serie di strumenti e funzionalità che migliorano l'interazione e ottimizzano l'esperienza dell'utente:</p>
+                <ul>
+                    <li><strong>Bottoni:</strong> I bottoni presenti sulla pagina iniziale evidenziano il testo al loro interno cambiando colore al passaggio del mouse, creando un effetto visivo che attira l'attenzione. Inoltre, i bottoni permettono di entrare nella pagina di descrizione delle illustrazioni delle monete, offrendo così un facile accesso ai dettagli visivi delle monete e delle loro illustrazioni.</li>
+                    <li><strong>Accordion:</strong> Gli accordion vengono utilizzati nella pagina del catalogo per nascondere i filtri. Questo approccio permette di mantenere la pagina pulita e ordinata, ed è particolarmente utile per dispositivi mobili, dove la visibilità dei filtri può essere espansa o compressa facilmente.</li>
+                    <li><strong>Card:</strong> Le card sono utilizzate per visualizzare le informazioni relative alle monete, creando una separazione chiara tra i diversi contenuti. Ogni card include un pulsante che porta direttamente alla pagina della moneta, facilitando la navigazione.</li>
+                    <li><strong>Tooltips:</strong> I tooltips appaiono solo al passaggio del mouse sopra il logo del sito, fornendo un breve suggerimento o informazione su cosa accade al clic. Questo aiuta a migliorare la chiarezza e l'interattività.</li>
+                    <li><strong>Dropdowns:</strong> Nella navbar è presente un dropdown che consente di accedere rapidamente alla navigazione secondaria, rendendo più semplice l'esplorazione delle varie sezioni del sito.</li>
+                    <li><strong>Carousel:</strong> Nella pagina di descrizione delle illustrazioni delle monete, è presente un carosello che mostra le immagini reali delle illustrazioni. Questo strumento consente di visualizzare le diverse illustrazioni delle monete in modo interattivo, permettendo agli utenti di esplorare i dettagli visivi in modo fluido e coinvolgente.</li>
+                    <li><strong>Pagination:</strong> Nella pagina di apertura, la paginazione permette di visualizzare le monete della collezione in modo interattivo, consentendo agli utenti di navigare facilmente tra le diverse monete senza dover ricaricare l'intera pagina.</li>
+                    <li><strong>Sticky Header:</strong> Il sito include un header sticky, che rimane visibile nella parte superiore della pagina anche durante lo scrolling. Questo garantisce che le opzioni di navigazione siano sempre accessibili senza dover risalire, migliorando l'usabilità durante la navigazione.</li>
+                </ul>
+            
+                <h3>7.3 Strumenti, Servizi, Tool e Metodi Aggiuntivi</h3>
+                <p>Il sito include anche alcuni servizi e tool aggiuntivi che migliorano l'interazione e la funzionalità:</p>
+                <ul>
+                    <li><strong>Integrazioni Social:</strong> Le integrazioni con ShareThis permettono agli utenti di condividere facilmente contenuti sui social network e di interagire con il sito.</li>
+                </ul>
+            </section>
+            
+            <section id="bibliografia">
+                <h2>8. Bibliografia</h2>
+                <h3>8.1 Software e Web Application Utilizzati:</h3>
+                <ul>
+                    <li><strong>Wireframes:</strong> Realizzati con Balsamiq Wireframes: <a href="https://balsamiq.com/">https://balsamiq.com/</a></li>
+                    <li><strong>Mappa concettuale e schema delle dipendenze:</strong> Realizzati con Diagrams.net: <a href="https://app.diagrams.net/">https://app.diagrams.net/</a></li>
+                    <li><strong>Sito pubblicato:</strong> Con Github Pages: <a href="https://pages.github.com/">https://pages.github.com/</a></li>
+                    <li><strong>Integrazione social:</strong> Realizzata con ShareThis: <a href="https://platform.sharethis.com/">https://platform.sharethis.com/</a></li>
+                    <li><strong>Codice:</strong> Realizzato con Visual Studio Code: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+                </ul>
+            
+                <h3>8.2 Testi e Immagini:</h3>
+                <ul>
+                    <li><strong>Immagini:</strong> Ottenute tramite Google Immagini e da vari siti web specializzati nei temi correlati, dove erano disponibili fotografie pertinenti agli argomenti trattati.</li>
+                    <li><strong>Testi:</strong> Informazioni e testi trovati su <a href="https://cultura.gov.it/luogo/castel-del-monte">https://cultura.gov.it/luogo/castel-del-monte</a></li>
+                </ul>
+            
+                <h3>8.3 Codice:</h3>
+                <p>Utilizzo della documentazione del framework Bootstrap e delle varie sezioni di HowTo di W3Schools.</p>
+            </section>
+            
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 EuroIllustrazioni | info@euroillustrazioni.com | +39 123 456 7890</p>
+            <div class="sharethis-inline-share-buttons"></div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

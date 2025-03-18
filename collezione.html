@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroIllustrazioni</title>
+    <meta name="description" content="Scopri la collezione di monete europee in circolazione e commemorative. Esplora la storia e il design di ogni moneta, con immagini e dettagli unici.">
+    <meta name="keywords" content="monete europee, euro, collezione monete, monete commemorative, monete rare, numismatica, monete da collezione, valore monete euro, storia monete, monete italiane, monete da 2 euro, monete d'oro, monete d'argento">
+    <!-- Dublin Core Metadata -->
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+    <meta name="DC.Title" content="EuroIllustrazioni - Monete Europee"/>
+    <meta name="DC.Creator" content="Team EuroIllustrazioni"/>
+    <meta name="DC.Subject" content="Numismatica, Storia delle Monete, Collezionismo"/>
+    <meta name="DC.Description" content="Una raccolta dettagliata delle monete in euro, con immagini e informazioni su storia, valore e rarità."/>
+    <meta name="DC.Publisher" content="EuroIllustrazioni"/>
+    <meta name="DC.Contributor" content="Redazione EuroIllustrazioni"/>
+    <meta name="DC.Date" content="2025-03-09"/>
+    <meta name="DC.Type" content="Sito Web Informativo"/>
+    <meta name="DC.Format" content="text/html"/>
+    <meta name="DC.Identifier" content="https://www.euroillustrazioni.com"/>
+    <meta name="DC.Source" content="https://www.euroillustrazioni.com"/>
+    <meta name="DC.Language" content="it"/>
+    <meta name="DC.Rights" content="© 2025 EuroIllustrazioni - Tutti i diritti riservati"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=67d1483186189a0019fafc31&product=inline-share-buttons&source=platform" async="async"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="home.html" class="logo" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Torna alla home">💰 EuroIllustrazioni</a>
+            <nav class="nav">
+                <!-- Menù con dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="home.html">Home</a></li>
+                        <li><a class="dropdown-item" href="collezione.html">Collezione</a></li>
+                        <li><a class="dropdown-item" href="about.html">About</a></li>
+                        <li><a class="dropdown-item" href="web_project_plan.html">Web Project Plan</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- BREADCRUMBS -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Collezione</li>
+    </ol>
+</nav>
+
+<!-- FILTRO E BARRA DI RICERCA -->
+<div class="container mb-4">
+    <div class="row">
+        <!-- Barra di ricerca -->
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Cerca una moneta..." aria-label="Cerca una moneta">
+                <button class="btn btn-primary" type="button">Cerca</button>
+            </div>
+        </div>
+
+        <!-- Filtro -->
+        <div class="col-md-6">
+            <div class="accordion" id="filterAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse" aria-expanded="true">
+                            Filtri
+                        </button>
+                    </h2>
+                    <div id="filterCollapse" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="accordion" id="filterOptions">
+                                <!-- Filtro per Valore -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterValue">
+                                            Per valore
+                                        </button>
+                                    </h2>
+                                    <div id="filterValue" class="accordion-collapse collapse" data-bs-parent="#filterOptions">
+                                        <div class="accordion-body">
+                                            <select class="form-select">
+                                                <option>1 cent</option>
+                                                <option>2 cent</option>
+                                                <option>5 cent</option>
+                                                <option>10 cent</option>
+                                                <option>20 cent</option>
+                                                <option>50 cent</option>
+                                                <option>1 euro</option>
+                                                <option>2 euro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Filtro per Materiale -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterMaterial">
+                                            Per materiale
+                                        </button>
+                                    </h2>
+                                    <div id="filterMaterial" class="accordion-collapse collapse" data-bs-parent="#filterOptions">
+                                        <div class="accordion-body">
+                                            <select class="form-select">
+                                                <option>Rame</option>
+                                                <option>Ottone</option>
+                                                <option>Nichel</option>
+                                                <option>Argento</option>
+                                                <option>Oro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Filtro per Grandezza -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterSize">
+                                            Per grandezza
+                                        </button>
+                                    </h2>
+                                    <div id="filterSize" class="accordion-collapse collapse" data-bs-parent="#filterOptions">
+                                        <div class="accordion-body">
+                                            <select class="form-select">
+                                                <option>Piccola</option>
+                                                <option>Media</option>
+                                                <option>Grande</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> <!-- Fine filtro -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Fine filtro -->
+    </div>
+</div>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-5">
+        
+        <!-- NUOVA SEZIONE INTRODUTTIVA -->
+        <section class="text-center mb-5">
+            <h1 class="mb-3" style="color: #003366;">Ecco la collezione di monete europee</h1>
+            <p class="lead">Scopri le diverse monete in circolazione e quelle commemorative. Ogni moneta racconta una storia unica, riflettendo la cultura e la tradizione del paese che la emette.</p>
+        </section>
+
+        <!-- Titolo principale -->
+        <h2 class="text-center mb-5" style="color: #003366;">Monete in circolazione</h2>
+
+                <!-- Galleria di Monete Regolari -->
+<div class="row text-center">
+    <!-- Card Moneta 1 Cent -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/1cent.jpg" class="card-img-top" alt="1 cent">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">1 Cent</h5>
+                <p class="card-text">1 centesimo di euro.</p>
+                <a href="1cent.html" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Moneta 2 Cent -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/2cent.jpg" class="card-img-top" alt="2 cent">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">2 Cent</h5>
+                <p class="card-text">2 centesimi di euro.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Moneta 5 Cent -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/5cent.jpg" class="card-img-top" alt="5 cent">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">5 Cent</h5>
+                <p class="card-text">5 centesimi di euro.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Moneta 10 Cent -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/10cent.jpg" class="card-img-top" alt="10 cent">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">10 Cent</h5>
+                <p class="card-text">10 centesimi di euro.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Moneta 20 Cent -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/20cent.jpg" class="card-img-top" alt="20 cent">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">20 Cent</h5>
+                <p class="card-text">20 centesimi di euro.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Moneta 50 Cent -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/50cent.jpg" class="card-img-top" alt="50 cent">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">50 Cent</h5>
+                <p class="card-text">50 centesimi di euro.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Moneta 1 Euro -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/1euro.jpg" class="card-img-top" alt="1 euro">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">1 Euro</h5>
+                <p class="card-text">1 euro.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Moneta 2 Euro -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/2euro.jpg" class="card-img-top" alt="2 euro">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">2 Euro</h5>
+                <p class="card-text">2 euro.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Galleria di Monete commemorative -->
+<h2 class="text-center mb-5" style="color: #003366;">Alcune Monete commemorative</h2>
+<div class="row text-center">
+    <!-- Moneta commemorativa 1 -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/atene.jpg" class="card-img-top" alt="Moneta commemorativa 1">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">Atene 2004</h5>
+                <p class="card-text">Moneta per le olimpiadi di Atene.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moneta commemorativa 2 -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/verdi.jpg" class="card-img-top" alt="Moneta commemorativa 2">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">Giuseppe Verdi</h5>
+                <p class="card-text">Moneta per i 200 anni di Giuseppe Verdi</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moneta commemorativa 3 -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/falconeBorsellino.jpg" class="card-img-top" alt="Moneta commemorativa 3">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">Falcone e Borsellino</h5>
+                <p class="card-text">30 anni dalla scomparsa di Falcone e Borsellino</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moneta commemorativa 4 -->
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="src/covid.jpeg" class="card-img-top" alt="Moneta commemorativa 4">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #003366;">Moneta commemorativa dei medici durante la pandemia</h5>
+                <p class="card-text">Ringraziamento ai medici per il covid-19</p>
+                <a href="#" class="btn btn-primary" style="background-color: #FFD700; color: #003366;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 EuroIllustrazioni | info@euroillustrazioni.com | +39 123 456 7890</p>
+            <div class="sharethis-inline-share-buttons"></div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
